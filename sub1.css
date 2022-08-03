@@ -1,0 +1,313 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{color: #565656; text-decoration: none;}
+
+body{
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
+    line-height: 25px;
+    color: #565656;
+}
+
+/*헤더*/
+#header{
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #eee;
+}
+.header_inner img{
+    width: 133px;
+    height: 133px;
+}
+.header_inner> a>img{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header_inner{
+    width: 1140px;
+    margin: 30px auto;
+}
+.header_inner .lnb li{
+    float: left;
+    padding: 60px 100px 0 80px;
+    font-size: 15px;
+}
+.header_inner .lnb2{
+    float: right;
+    font-size: 15px;
+    font-weight: normal;
+}
+.header_inner .lnb2 li{
+    float: left;
+    padding: 60px 60px 0 100px;
+}
+.header_inner> .hover> li> a:hover{
+    color: black;
+}
+
+/*메뉴버튼 호버*/
+.solid{width:100%;
+    margin:auto;
+    margin-top:0px;
+    height:5px;
+    background:black;
+    visibility:hidden;
+    opacity:0;
+    transform:scaleX(0);
+    transition-property:opacity, transform;
+    transition-duration:0.5s;}
+.hover>li>a:hover .solid{transform:scaleX(1);
+                    opacity:1;
+                    visibility:visible;}
+
+/*컨텐츠*/
+.content{
+    width: 900px;
+    height: 700px;
+    margin: 250px auto 0;
+}
+.content img{
+    display: block;
+    float: left;
+}
+.content .box{
+    width: 450px;
+    float: right;
+}
+/*box1*/
+.content .box1{
+    position: relative;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.content .box1 p{
+    padding-bottom: 15px;
+}
+.content .box1 img{
+    display: block;
+}
+.content .box1 .icon{
+    position: absolute;
+    top: 3px;
+    left: 70px;
+}
+.content .box1 h1{
+    font-size: 40px;
+    color: black;
+    padding-bottom: 20px;
+}
+.content .box1 li{
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 3px 10px;
+}
+.content .box1 .icon2{
+    position: absolute;
+    right: 40px;
+    top: 88px;
+}
+.content .box1 .icon3{
+    position: absolute;
+    right: 0px;
+}
+
+/*box2*/
+.content .box2{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.content .box2 h2{
+    font-size: 30px;
+    color: black;
+    font-weight: normal;
+    padding: 20px 0;
+}
+.content .box2 p{
+    padding-bottom: 5px;
+}
+.content .box2 span{
+    color: #434343;
+}
+table{
+    padding: 20px 0;
+}
+tr td:nth-child(1){
+    padding-right: 30px;
+}
+.width{
+    font-family: 'Noto Sans KR';
+    padding: 15px 180px 15px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.width2{
+    font-family: 'Noto Sans KR';
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+/*box3*/
+.content .box3{
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+}
+.content .box3 li{
+    float: left;
+}
+.content .box3 li:nth-child(1){
+    font-size: 17px;
+    color: #434343;
+    margin-right: 10px;
+}
+.content .box3 li:nth-child(3){
+    padding-left: 10px;
+}
+/*장바구니,구매하기버튼*/
+.content .but{
+    margin-top: 20px;
+    position: relative;
+}
+.content .but li a{
+    color: black;
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 18px;
+}
+.content .but ul:nth-child(1){
+    position: absolute;
+    left: 0;
+    background-color: #ebebeb;
+    border-radius: 10px;
+}
+.content .but ul:nth-child(2){
+    position: absolute;
+    right: 0;
+    background-color: #f3e5d8;
+    border-radius: 10px;
+}
+.content .but ul:nth-child(1) a:hover{
+    background-color: #cfcfcf;
+    border-radius: 10px;
+}
+.content .but ul:nth-child(2) a:hover{
+    background-color: #e6d7c9;
+    border-radius: 10px;
+}
+
+/*상세정보 메뉴*/
+#content2{
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+}
+.con2_inner{
+    width: 900px;
+    margin: auto;
+}
+.con2_inner li{
+    float: left;
+}
+.con2_inner li a{
+    font-size: 20px;
+    color: black;
+}
+.con2_inner ul li:nth-child(2){
+    padding: 0 319px;
+}
+.con2_inner li a:hover{
+    border-bottom: 3px solid black;
+    padding-bottom: 1px;
+}
+
+/*상세페이지*/
+.main{
+    width: 900px;
+    margin: 0 auto 0;
+}
+.main img{
+    display: block;
+}
+.main h1{
+    font-size: 20px;
+    color: black;
+    padding: 50px 0 10px 0;
+}
+
+/*푸터*/
+#footer{
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+.footer_inner{
+    width: 1320px;
+    height: 150px;
+    margin:30px auto;
+    font-size: 15px;
+    font-family: 'Noto Sans KR';
+}
+.footer_inner img{
+    display: block;
+    float: left;
+    width: 180px;
+    height: 181px;
+    padding-bottom: 20px;
+}
+.footer{
+    float: right;
+    margin-top: 10px;
+}
+.footer .footer1 li{
+    float: left;
+    padding: 0 0 10px 40px;
+}
+.footer .footer1 a:hover{
+    border-bottom: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+.footer .footer2{
+    float: right;
+}
+.footer .footer2 li{
+    float: left;
+    color: #858585;
+    padding-left: 20px;
+}
+.footer p{
+    text-align: right;
+    clear: both;
+    color: #858585;
+}
+.sns{
+    float: right;
+    margin-top: 10px;
+    position: relative;
+}
+.sns li{
+    float: left;
+    padding-left: 15px;
+}
+.sns img{
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+.sns li a{
+    opacity: 0.6;
+}
+.sns li a:hover{
+    opacity: 1;
+}
+
+/*top 아이콘 꾸미기*/
+.top{
+    position:fixed; 
+    bottom:30px; 
+    right:50px; 
+    display:none;
+    opacity: 1;
+  }
